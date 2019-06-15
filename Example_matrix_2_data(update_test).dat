@@ -1,0 +1,34 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Diego
+ * Creation Date: 16 апр. 2019 г. at 15:55:54
+ *********************************************/
+n=5;
+t=10;
+
+SheetConnection my_sheet1 ("price_p.xlsx");
+Price_p from SheetRead(my_sheet1, "Price_p");
+
+SheetConnection my_sheet2 ("price_z.xlsx");
+Price_z from SheetRead(my_sheet2, "Price_z");
+
+SheetConnection my_sheet3 ("quantity_z.xlsx");
+Quantity_z from SheetRead(my_sheet3, "Quantity_z");
+
+SheetConnection my_sheet4 ("start.xlsx");
+Start from SheetRead(my_sheet4, "Start");
+
+SheetConnection my_sheet5 ("time_p.xlsx");
+Time_p from SheetRead(my_sheet5, "Time_p");
+
+SheetConnection my_sheet6 ("time_z.xlsx");
+Time_z from SheetRead(my_sheet6, "Time_z");
+
+SheetConnection my_sheet7 ("ni.xlsx");
+NI from SheetRead(my_sheet7, "B2:J6");
+
+SheetConnection my_sheet8 ("result_z.xlsx");
+Setz to SheetWrite(my_sheet8, "A2:D250");
+
+SheetConnection my_sheet9 ("result_p.xlsx");
+Setp to SheetWrite(my_sheet9, "A2:D250");
